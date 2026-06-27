@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rume - L — RUME</title>
+<meta name="description" content="Rume - L table lamp. A warm glow for everyday living." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand" aria-label="rume home"><img src="assets/logo-red.png" alt="rume" /></a>
+    <nav class="nav-center">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#collection">Collection</a>
+      <a href="product.html" class="active">Shop</a>
+      <a href="planner.html">Planner</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="#contact">info</a>
+      <a href="#">Sign in</a>
+      <button class="cart-link" data-cart-open>Cart (<b data-cart-count>0</b>)</button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== PDP HERO ===================== -->
+<section class="pdp">
+  <div class="pdp-media">
+    <img data-pdp-img src="assets/lamp-red-square.jpg" alt="Rume - L lamp, red base" />
+    <a class="pdp-preview" href="planner.html" aria-label="Preview this lamp in a room layout">Preview in a room ↗</a>
+  </div>
+
+  <div class="pdp-info">
+    <div class="pdp-top">
+      <div>
+        <h1 class="pdp-title" data-title>Rume - L</h1>
+        <div class="pdp-price" data-price>₩ 99,000</div>
+      </div>
+      <button class="toggle" aria-pressed="true" data-light-toggle aria-label="Toggle light"><span class="knob"></span></button>
+    </div>
+
+    <div class="pdp-divider"></div>
+
+    <div class="opt-label">Size</div>
+    <div class="sizes">
+      <button class="size active" data-size="L">L</button>
+      <button class="size" data-size="M">M</button>
+      <button class="size" data-size="S">S</button>
+    </div>
+
+    <div class="opt-label">Color</div>
+    <div class="swatches">
+      <button class="swatch active" data-color="red" aria-label="Red"></button>
+      <button class="swatch" data-color="cream" aria-label="Cream"></button>
+      <button class="swatch" data-color="brown" aria-label="Brown"></button>
+    </div>
+
+    <div class="pdp-divider"></div>
+
+    <div class="specs">
+      <div class="acc">
+        <button class="acc-head" aria-expanded="true" aria-controls="acc-notice">Notice <span class="pm">+</span></button>
+        <div class="acc-body" id="acc-notice"><div class="inner">
+          Power: 5W LED<br>
+          Color Temperature: 2700K Warm White<br>
+          Brightness: 3-Level Dimming<br>
+          Control: Touch Sensor<br>
+          Material: ABS, PC<br>
+          Size: Ø240 × H320 mm
+        </div></div>
+      </div>
+      <div class="acc">
+        <button class="acc-head" aria-expanded="false" aria-controls="acc-delivery">Delivery <span class="pm">+</span></button>
+        <div class="acc-body" id="acc-delivery"><div class="inner">
+          Ships within 2–4 business days.<br>
+          Free delivery over ₩ 50,000.<br>
+          Carefully packed to protect the shade.<br>
+          Returns accepted within 14 days.<br>
+          1-year limited warranty.
+        </div></div>
+      </div>
+    </div>
+
+    <div class="pdp-divider"></div>
+
+    <div class="order-row">
+      <span>Order Total (Qty)</span>
+      <span class="total" data-order-total>₩0 (0)</span>
+    </div>
+
+    <div class="buy-row">
+      <button class="btn btn-solid" data-buy>Buy</button>
+      <button class="btn btn-outline" data-add-cart>Add to Cart</button>
+      <button class="heart" data-heart aria-label="Save to wishlist">♡</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WARM GLOW DETAIL ===================== -->
+<section class="glow-detail">
+  <div class="gd-copy reveal">
+    <h2>A Warm Glow For Everyday Living</h2>
+    <p class="body-sm">Designed With Simplicity And Serenity In Mind, The Lamp Combines A Clean Silhouette With A Warm,
+      Ambient Glow. Its Balanced Proportions And Subtle Presence Allow It To Complement A Variety Of
+      Interiors While Adding A Sense Of Comfort And Tranquility.</p>
+  </div>
+  <div class="gd-pair">
+    <img class="reveal" src="assets/detail-red-1.jpg" alt="Close-up of the glowing shade" />
+    <img class="reveal d1" src="assets/detail-red-2.jpg" alt="The full lamp glowing warmly" />
+  </div>
+</section>
+
+<!-- ===================== BRAND LOGO SECTION ===================== -->
+<section class="brand-sec">
+  <div class="brand-mark reveal"><img src="assets/logo-ivory.png" alt="rume" /></div>
+  <p class="reveal d1">Inspired By The Natural Silhouette Of A Mushroom, The Design Embraces Soft Curves And Balanced
+    Proportions. Its Sculptural Form Creates A Subtle Presence, Functioning As Both A Lighting Object And A
+    Timeless Piece Of Interior Design.</p>
+</section>
+
+<!-- ===================== LIFESTYLE ===================== -->
+<section class="bleed bleed-parallax">
+  <img class="parallax" data-px="32" src="assets/woman-dog.jpg" alt="A warm evening at home with the RUME lamp" />
+</section>
+
+<!-- ===================== EDITORIAL DOTS ===================== -->
+<section class="frame-bleed" id="editorial">
+  <img src="assets/editorial.jpg" alt="More than a lighting fixture — an object that brings harmony to everyday interiors" />
+  <span class="live-dot" style="left:62%;top:30%"></span>
+  <span class="live-dot" style="left:80%;top:62%"></span>
+  <span class="live-dot" style="left:46%;top:78%"></span>
+</section>
+
+<!-- ===================== CAMPAIGN MARKERS ===================== -->
+<section class="frame-bleed" id="campaign">
+  <img class="parallax" data-px="20" src="assets/campaign.jpg" alt="Complete your space — RUME in a lived-in interior" />
+</section>
+
+<!-- ===================== COLOR / SIZE COMPARISON ===================== -->
+<section class="recs" id="compare">
+  <a class="rec" href="product.html" data-product="L">
+    <div class="rec-media"><img src="assets/shopns-red.jpg" alt="Rume - L, red base" /></div>
+    <div class="rec-info">
+      <span class="ri-1">Red</span>
+      <span class="ri-2">Large</span>
+      <span class="ri-3">Warm Glow Finish</span>
+    </div>
+  </a>
+  <a class="rec" href="product.html" data-product="M">
+    <div class="rec-media"><img src="assets/shopns-cream.jpg" alt="Rume - M, ivory base" /></div>
+    <div class="rec-info">
+      <span class="ri-1">Ivory</span>
+      <span class="ri-2">Medium</span>
+      <span class="ri-3">Soft Ambient Tone</span>
+    </div>
+  </a>
+  <a class="rec" href="product.html" data-product="S">
+    <div class="rec-media"><img src="assets/shopns-brown.jpg" alt="Rume - S, brown base" /></div>
+    <div class="rec-info">
+      <span class="ri-1">Brown</span>
+      <span class="ri-2">Small</span>
+      <span class="ri-3">Deep Warm Base</span>
+    </div>
+  </a>
+</section>
+
+<!-- ===================== FOOTER / CONTACT ===================== -->
+<footer class="site-footer" id="contact">
+  <div class="footer-mark"><img src="assets/logo-brown.png" alt="rume" /></div>
+  <div class="footer-grid">
+    <div class="col"><h4>rume</h4></div>
+    <div class="col"><a href="#">INSTAGRAM</a></div>
+    <div class="col">
+      <a href="#">About</a>
+      <a href="#">Membership</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="col right">
+      <p>Designed by JY · NH · HJ · YJ · DY</p>
+      <p>Business no 492 - 22 - 82191</p>
+      <p>Email: rume@gmail.com</p>
+    </div>
+  </div>
+  <div class="footer-base">
+    <span>©2026 KDM+ V1.0. All rights reserved.</span>
+    <span>Designed in Korea.</span>
+    <span>Crafted with light, form, and timeless simplicity.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
