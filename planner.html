@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>RUME — Room Planner</title>
+<meta name="description" content="RUME room planner — arrange furniture and place luminous mushroom lighting in a 3.5m × 3.5m space." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand" aria-label="rume home"><img src="assets/logo-red.png" alt="rume" /></a>
+    <nav class="nav-center">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#collection">Collection</a>
+      <a href="product.html">Shop</a>
+      <a href="planner.html" class="active">Planner</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="#contact">info</a>
+      <a href="product.html">Sign in</a>
+      <button class="cart-link" data-cart-open>Cart (<b data-cart-count>0</b>)</button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== PLANNER ===================== -->
+<main class="planner" id="planner">
+  <div class="planner-header reveal">
+    <img class="planner-logo" src="assets/logo-red.png" alt="rume" />
+    <p class="planner-subtitle">3.5m × 3.5m space with luminous mushrooms</p>
+    <div class="planner-controls">
+      <button type="button" data-planner-action="furniture">Arrange Furniture</button>
+      <button type="button" data-planner-action="lamp">Place Lamps</button>
+      <button type="button" data-planner-action="shuffle">Shuffle Layout</button>
+      <button type="button" data-planner-action="consult" class="primary">Book Consultation</button>
+    </div>
+  </div>
+
+  <div class="planner-stage reveal d2">
+    <div class="board">
+      <svg id="floorplan" viewBox="-14 -14 788 788" role="img" aria-label="3.5 by 3.5 metre room planner">
+        <defs>
+          <pattern id="wall-hatch" width="9" height="9" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+            <line x1="0" y1="0" x2="0" y2="9" stroke="rgba(36,23,19,0.12)" stroke-width=".8" />
+          </pattern>
+          <radialGradient id="lightZone" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#FFF4CF" stop-opacity=".85" />
+            <stop offset="55%" stop-color="#FFDFA3" stop-opacity=".3" />
+            <stop offset="100%" stop-color="#D13128" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+        <g id="structure-layer"></g>
+        <g id="furniture-layer"></g>
+        <g id="light-layer"></g>
+      </svg>
+    </div>
+
+    <aside class="legend">
+      <h2>Legend</h2>
+      <div class="legend-item">
+        <span class="legend-icon"><svg width="42" height="12"><rect width="42" height="12" fill="rgba(255,255,255,0.06)" stroke="#2b2320" stroke-width=".8"/></svg></span>
+        Concrete Wall · 15 cm
+      </div>
+      <div class="legend-item">
+        <span class="legend-icon"><svg width="42" height="30"><line x1="36" y1="4" x2="36" y2="28" stroke="#2b2320" stroke-width="1.4"/><line x1="36" y1="4" x2="12" y2="4" stroke="#2b2320" stroke-width="1.4"/><path d="M36 28 A24 24 0 0 0 12 4" fill="none" stroke="#2b2320" stroke-width=".8" stroke-dasharray="2,2"/></svg></span>
+        Swing Door · Keep Clear
+      </div>
+      <div class="legend-item">
+        <span class="legend-icon"><svg width="42" height="14"><rect x="0" y="2" width="42" height="10" fill="rgba(255,255,255,0.06)" stroke="#2b2320" stroke-width=".8"/><line x1="0" y1="7" x2="42" y2="7" stroke="#2b2320" stroke-width=".8"/></svg></span>
+        Sliding Window
+      </div>
+      <div class="legend-item">
+        <span class="legend-icon"><svg width="42" height="30"><rect x="6" y="2" width="30" height="26" fill="rgba(255,255,255,0.06)" stroke="#2b2320" stroke-width=".8"/><line x1="6" y1="9" x2="36" y2="9" stroke="#2b2320" stroke-width=".7"/></svg></span>
+        Double Bed
+      </div>
+      <div class="legend-item">
+        <span class="legend-icon"><svg width="30" height="30"><rect x="5" y="5" width="20" height="20" fill="rgba(255,255,255,0.06)" stroke="#2b2320" stroke-width=".8"/></svg></span>
+        Side Table
+      </div>
+      <div class="legend-item">
+        <span class="legend-icon"><svg width="42" height="20"><rect x="3" y="4" width="36" height="12" fill="rgba(255,255,255,0.06)" stroke="#2b2320" stroke-width=".8"/></svg></span>
+        TV Console &amp; 80" TV
+      </div>
+      <div class="legend-item">
+        <span class="legend-icon"><svg width="30" height="30"><circle cx="15" cy="15" r="12" fill="url(#lightZone)"/><circle cx="15" cy="15" r="5" fill="#ffe9c0" stroke="#2b2320" stroke-width=".6"/></svg></span>
+        Luminous Mushroom Lamps · Cluster
+      </div>
+      <div class="dimrow">
+        Space 3.5 m × 3.5 m · 12.25 ㎡<br>
+        Small KRW 49,000 · Medium KRW 69,000 · Large KRW 89,000<br>
+        Place the lamps, then book a consultation.
+      </div>
+    </aside>
+  </div>
+</main>
+
+<!-- ===================== CONSULT / QUOTE MODAL ===================== -->
+<div id="modal-overlay" class="planner-modal">
+  <div id="modal-box" role="dialog" aria-modal="true" aria-label="Book consultation">
+    <h3 class="modal-title">Your Selection</h3>
+    <div id="modal-body"></div>
+    <div id="modal-actions">
+      <button id="btn-modal-order" class="btn btn-solid">Place Order</button>
+      <button id="btn-modal-close" class="btn btn-outline">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== FOOTER / CONTACT ===================== -->
+<footer class="site-footer" id="contact">
+  <div class="footer-mark"><img src="assets/logo-brown.png" alt="rume" /></div>
+  <div class="footer-grid">
+    <div class="col"><h4>rume</h4></div>
+    <div class="col"><a href="#">INSTAGRAM</a></div>
+    <div class="col">
+      <a href="#">About</a>
+      <a href="#">Membership</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="col right">
+      <p>Designed by JY · NH · HJ · YJ · DY</p>
+      <p>Business no 492 - 22 - 82191</p>
+      <p>Email: rume@gmail.com</p>
+    </div>
+  </div>
+  <div class="footer-base">
+    <span>©2026 KDM+ V1.0. All rights reserved.</span>
+    <span>Designed in Korea.</span>
+    <span>Crafted with light, form, and timeless simplicity.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/planner.js"></script>
+</body>
+</html>
