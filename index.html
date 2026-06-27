@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>RUME — Soft light for everyday living</title>
+<meta name="description" content="RUME — sculptural mushroom table lamps. A warm glow for everyday living." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand" aria-label="rume home"><img src="assets/logo-red.png" alt="rume" /></a>
+    <nav class="nav-center">
+      <a href="index.html#home" class="active">Home</a>
+      <a href="index.html#collection">Collection</a>
+      <a href="product.html">Shop</a>
+      <a href="planner.html">Planner</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="#contact">info</a>
+      <a href="product.html">Sign in</a>
+      <button class="cart-link" data-cart-open>Cart (<b data-cart-count>0</b>)</button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+  <img class="hero-logo" src="assets/logo-red.png" alt="rume" />
+  <img class="hero-lamp" src="assets/hero-shade.png" alt="RUME mushroom lamp shade glowing" />
+  <div class="hero-meta">
+    <span>rume</span>
+    <span class="dim">INSTAGRAM</span>
+    <span class="dim">About</span>
+    <span class="dim">Designed by JY · NH · HJ · YJ · DY</span>
+  </div>
+</section>
+
+<!-- ===================== INTRO ===================== -->
+<section class="intro">
+  <h2 class="reveal">Inspired By Organic Forms</h2>
+  <p class="body-sm reveal d1">Inspired By The Natural Silhouette Of A Mushroom, The Design Embraces Soft Curves And Balanced
+    Proportions. Its Sculptural Form Creates A Subtle Presence, Functioning As Both A Lighting Object And A
+    Timeless Piece Of Interior Design.</p>
+  <a href="product.html" class="btn btn-pill reveal d2">Shop Now</a>
+</section>
+
+<!-- ===================== COLLECTION GRID ===================== -->
+<section class="collection-grid" id="collection">
+  <a class="pcard reveal" href="product.html" data-product="L">
+    <img src="assets/shopns-red.jpg" alt="Rume table lamp, red base" />
+    <div class="pcard-meta"><span>Rume — L</span><span>₩ 99,000</span></div>
+  </a>
+  <a class="pcard reveal d1" href="product.html" data-product="M">
+    <img src="assets/shopns-cream.jpg" alt="Rume table lamp, cream base" />
+    <div class="pcard-meta"><span>Rume — M</span><span>₩ 79,000</span></div>
+  </a>
+  <a class="pcard reveal d2" href="product.html" data-product="S">
+    <img src="assets/shopns-brown.jpg" alt="Rume table lamp, brown base" />
+    <div class="pcard-meta"><span>Rume — S</span><span>₩ 59,000</span></div>
+  </a>
+</section>
+
+<!-- ===================== MUSHROOM INSPIRATION ===================== -->
+<section class="mush">
+  <div class="mush-head">
+    <div class="mush-col reveal">
+      <span class="k">L</span>
+      <h3>Designed To Become The Focal Point Of A Space.</h3>
+      <p class="body-sm">A signature size for larger rooms. Even when switched off it stands as a sculptural object, while its soft diffused light settles the mood of a room.</p>
+    </div>
+    <div class="mush-col reveal d1">
+      <span class="k">M</span>
+      <h3>Balanced For Everyday Living.</h3>
+      <p class="body-sm">A standard model with balanced proportions and versatility. It blends naturally into any space, offering the most comfortable mood lighting for daily life.</p>
+    </div>
+    <div class="mush-col reveal d2">
+      <span class="k">S</span>
+      <h3>A Compact Light For Personal Moments.</h3>
+      <p class="body-sm">A minimal object for smaller spaces. Even at a compact size it keeps the product's signature language, adding a warm presence to a bedside or desk.</p>
+    </div>
+  </div>
+  <div class="mush-img reveal"><img src="assets/mushrooms.jpg" alt="Mushroom references and a red fly agaric" /></div>
+</section>
+
+<!-- ===================== LIGHT INTERACTION ===================== -->
+<section class="light-sec">
+  <div class="light-stage on" id="lightStage" data-lvl="2">
+    <img src="assets/hand-lamp.jpg" alt="A hand gently touching the top of the RUME lampshade" />
+    <div class="glow"></div>
+    <button class="toggle on-dark light-toggle-float" aria-pressed="true"
+      data-light-toggle aria-label="Toggle light"><span class="knob"></span></button>
+  </div>
+
+  <div class="touch-copy reveal">
+    <p>Gently Touch The Top Of The Lampshade To Turn The Light On Or Off.<br>
+       Tap Again To Cycle Through Three Brightness Levels And Create The Atmosphere You Prefer.<br>
+       The Softly Diffused Light Provides A Warm And Comfortable Glow, Bringing A Sense Of Calm To Any Space.</p>
+    <div class="light-level" data-light-level>Brightness · level 2 of 3</div>
+  </div>
+
+  <div class="collage">
+    <figure class="c-left reveal"><img src="assets/life-desk.jpg" alt="Lamp on a wooden desk with books" /></figure>
+    <figure class="c-center reveal d1"><img src="assets/life-frame.jpg" alt="A person beside the lamp and a framed print" /></figure>
+    <figure class="c-right reveal d2"><img src="assets/life-plant.jpg" alt="A person beside a plant in warm light" /></figure>
+  </div>
+</section>
+
+<!-- ===================== FULL-WIDTH LIFESTYLE ===================== -->
+<section class="bleed bleed-parallax">
+  <img class="parallax" data-px="34" src="assets/woman-dog.jpg" alt="Evening at home — RUME lamp glowing beside a dog" />
+</section>
+
+<!-- ===================== SPLIT SECTION ===================== -->
+<section class="split-sec bleed">
+  <img src="assets/split-moments.jpg" alt="Soft light for everyday moments — balanced for everyday living" />
+</section>
+
+<!-- ===================== DETAIL CLOSE-UPS ===================== -->
+<section class="detail-pair cream">
+  <img class="reveal" src="assets/detail-cream-1.jpg" alt="Close-up of the ribbed shade and base" />
+  <img class="reveal d1" src="assets/detail-cream-2.jpg" alt="Close-up of the lamp dome and finial" />
+</section>
+
+<!-- ===================== PLANNER TEASER ===================== -->
+<section class="teaser" id="planner-teaser">
+  <div class="teaser-inner">
+    <div class="teaser-copy reveal">
+      <span class="eyebrow">Room Glow Planner</span>
+      <h3>Arrange the light of a 3.5m bedroom.</h3>
+      <p class="body-sm">A working floor-plan tool, not just a picture. Move the furniture, place a cluster of
+        luminous mushroom lamps, and preview how RUME shapes the mood of a room — drawn to architectural scale.</p>
+      <a href="planner.html" class="btn btn-pill">Open the Planner</a>
+    </div>
+    <a class="teaser-board reveal d1" href="planner.html" aria-label="Open the floor planner">
+      <svg viewBox="0 0 260 260" role="img" aria-label="Mini bedroom plan preview">
+        <rect x="10" y="10" width="240" height="240" fill="none" stroke="#3a1c10" stroke-width="9"/>
+        <rect x="22" y="22" width="216" height="216" fill="#f6efe1"/>
+        <rect x="96" y="8" width="74" height="14" fill="#fff" stroke="#3a1c10" stroke-width="1"/>
+        <line x1="96" y1="15" x2="170" y2="15" stroke="#3a1c10" stroke-width=".8"/>
+        <rect x="34" y="36" width="92" height="118" fill="#fff" stroke="#3a1c10" stroke-width="1.2" rx="3"/>
+        <rect x="40" y="42" width="80" height="30" fill="none" stroke="#3a1c10" stroke-width=".7" rx="2"/>
+        <circle cx="64" cy="50" r="5" fill="none" stroke="#3a1c10" stroke-width=".7"/>
+        <circle cx="96" cy="50" r="5" fill="none" stroke="#3a1c10" stroke-width=".7"/>
+        <rect x="34" y="160" width="22" height="22" fill="#fff" stroke="#3a1c10" stroke-width="1"/>
+        <rect x="214" y="70" width="14" height="86" fill="#fff" stroke="#3a1c10" stroke-width="1"/>
+        <line x1="170" y1="238" x2="170" y2="190" stroke="#3a1c10" stroke-width="1.2"/>
+        <path d="M170 190 A48 48 0 0 1 218 238" fill="none" stroke="#3a1c10" stroke-width=".8" stroke-dasharray="3,3"/>
+        <g>
+          <circle class="tp-glow" cx="150" cy="150" r="46" fill="url(#teaserGlow)"/>
+          <circle class="tp-glow" cx="178" cy="138" r="34" fill="url(#teaserGlow)"/>
+          <circle class="tp-core" cx="150" cy="150" r="9" fill="#FFE9C0" stroke="#3a1c10" stroke-width=".7"/>
+          <circle class="tp-core" cx="178" cy="138" r="7" fill="#FFE9C0" stroke="#3a1c10" stroke-width=".7"/>
+          <circle class="tp-core" cx="138" cy="176" r="6" fill="#FFE9C0" stroke="#3a1c10" stroke-width=".7"/>
+        </g>
+        <defs>
+          <radialGradient id="teaserGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#FFE9C0" stop-opacity=".95"/>
+            <stop offset="45%" stop-color="#FFD89A" stop-opacity=".45"/>
+            <stop offset="100%" stop-color="#FFD89A" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<!-- ===================== FOOTER / CONTACT ===================== -->
+<footer class="site-footer" id="contact">
+  <div class="footer-mark"><img src="assets/logo-brown.png" alt="rume" /></div>
+  <div class="footer-grid">
+    <div class="col"><h4>rume</h4></div>
+    <div class="col"><a href="#">INSTAGRAM</a></div>
+    <div class="col">
+      <a href="#">About</a>
+      <a href="#">Membership</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="col right">
+      <p>Designed by JY · NH · HJ · YJ · DY</p>
+      <p>Business no 492 - 22 - 82191</p>
+      <p>Email: rume@gmail.com</p>
+    </div>
+  </div>
+  <div class="footer-base">
+    <span>©2026 KDM+ V1.0. All rights reserved.</span>
+    <span>Designed in Korea.</span>
+    <span>Crafted with light, form, and timeless simplicity.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
